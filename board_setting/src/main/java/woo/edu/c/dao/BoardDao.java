@@ -20,7 +20,7 @@ public interface BoardDao {
 	
 	int boardDelete(int boardNo);
 	
-	/*------------ 캘린더------------- */
+	/*------------ 캘린더------ㅇ------- */
 	List<CalendarVo> schList(CalendarVo vo);
 	
 	int schRegi(CalendarVo vo);
