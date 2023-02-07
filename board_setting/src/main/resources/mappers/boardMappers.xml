@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+	<mapper namespace="boardMapper">
+  		<select id="test" resultType="testVo">
+			SELECT * FROM DEPT
+		</select>
+		
+		<select id="boardList" resultType="boardVo">
+			SELECT  
+					BOARDNO,
+					BOARDTITLE,
+					BOARDWRITER,
+					BOARDCONTENT,
+					BOARDDATE
+			FROM BOARD
+			ORDER BY BOARDDATE DESC
+		</select>
+		
+		<insert id="boardRegi">
+			INSERT INTO BOARD
+			(
+				BOARDNO,
+				BOARDTITLE,
+				BOARDWRITER,
+				BOARDCONTENT,
+				BOARDDATE
+			)
+			VALUES
+			(
+				boardNo.NEXTVAL,
+				#{boardTitle},
+				#{boardWriter},
+				#{boardContent},
+				SYSDATE
+			)						
+		</insert>
+		
+		<select id="boardDetail" resultType="boardVo">
+			SELECT  
+					BOARDNO,
+					BOARDTITLE,
+					BOARDWRITER,
+					BOARDCONTENT
+			FROM BOARD
+			WHERE BOARDNO = #{boardNo}
+		</select>
+		
+		<update id="boardUpdate">
+			UPDATE  BOARD
+			SET 
+				    BOARDTITLE = #{boardTitle},
+			 	    BOARDWRITER = #{boardWriter},
+			        BOARDCONTENT = #{boardContent}
+			WHERE   BOARDNO = #{boardNo}		
+		</update>
+		
+		<delete id="boardDelete">
+			DELETE FROM BOARD  					
+ 			WHERE BOARDNO = #{boardNo}		
+		</delete>
+		
+<!-- 		캘린더 부분 -->
+		<select id="schList" resultType="CalendarVo">
+			SELECT  
+					CALNO,
+					CALYEAR,
+					CALMONTH,
+					CALDAY,
+					CALTIME,
+					CALCONTENTS,
+					CALREQ
+			FROM CALENDAR
+			WHERE CALYEAR = #{calYear} 
+			AND   CALMONTH = #{calMonth} 
+			AND   CALDAY = #{calDay} 			
+			ORDER BY CALTIME ASC
+		</select>
+		
+		<!-- 스케줄 등록 -->
+		<insert id="schRegi">
+			INSERT INTO CALENDAR
+			(
+				calNo,
+				calYear,
+				calMonth,
+				calDay,
+				calTime,
+				calReq,
+				calDate,
+				calContents
+			)
+			VALUES
+			(
+				SEQ_CALENDAR.NEXTVAL,
+				#{calYear},
+				#{calMonth},
+				#{calDay},
+				#{calTime},
+				#{calReq},
+				#{calDate},
+				#{calContents}
+			)						
+		</insert>
+		
+		<!-- 스케줄 삭제 -->
+		<delete id="schDel">
+			DELETE FROM CALENDAR  					
+ 			WHERE CALNO = #{calNo}		
+		</delete>
+		
+		<!-- 스케줄 데이터 유무확인 -->
+		<select id="schView" resultType="CalendarVo">
+			SELECT  CALNO,
+					CALYEAR,
+					CALMONTH,
+					CALDAY,
+					CALTIME,
+					CALCONTENTS,
+					CALREQ
+			FROM CALENDAR
+			WHERE CALYEAR = #{calYear}
+			AND   CALMONTH = #{calMonth}
+		</select>
+		
+		
+<!--   실무에서는 거의 Delete사용 안하고 칼럼 ex)Use-YN두고 삭제시 N으로 update하고
+		select문에서 where조건에 Use-YN이 Y인것으로 검색한다. -->
+	</mapper>

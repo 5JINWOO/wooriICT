@@ -1,0 +1,173 @@
+@charset "UTF-8";
+
+/* section calendar */
+.sec_cal {
+	width: 360px;
+	margin: 0 auto;
+}
+
+.sec_cal .year {
+	font-weight: 700;
+	font-size: 40px;
+	text-align: center;
+	line-height: 78px;
+}
+
+.sec_cal .cal_nav {
+	display: flex;
+	justify-content: center; align-items : center;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 78px;
+	align-items: center;
+}
+
+.sec_cal .cal_nav a {
+	margin: 0 20px;
+	text-decoration: none;
+}
+
+.sec_cal .cal_nav .month {
+	width: 50px;
+	text-align: center;
+	line-height: 1;
+}
+
+.cal_wrap {
+	padding-top: 70px;
+	position: relative;
+	margin: 0 auto;
+}
+
+table {
+	border-bottom: 1px solid lightgray;
+}
+
+th {
+	display: table-cell;
+	vertical-align: inherit;
+	font-weight: bold;
+	text-align: -internal-center
+}
+/*--------------------------------- 모달창 ----------------------------------*/
+#modal.modal-overlay {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: none;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: rgba(0, 0, 0, 0.7);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+#modal .modal-window {
+	background: white;
+	border-radius: 5px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	box-shadow: 5px 5px 20px 1px rgba(0, 0, 0, .2);	
+	width: 600px;
+	height: 500px;
+	position: relative;
+}
+
+#modal .title {
+	padding: 20px 10px;
+
+	border-bottom:0.5px solid rgba(208,208,208, .5);           
+}
+
+#modal .title h2 {
+	display: inline;
+	font-weight: 540;
+	font-size: 1.2em;	
+}
+
+#modal .close-area {
+	display: inline;
+	float: right;
+	padding-right: 10px;
+	cursor: pointer;
+	text-shadow: 1px 1px 2px gray;
+	color: gray;
+}
+
+#modal .close-area i {
+	color:#D0D0D0;
+	box-shadow: 0;	
+}
+
+#modal .close-area::after {
+	float: both;
+}
+
+#modal .todayData {
+	padding:10px 0px;
+}
+
+#modal .delbtn {
+	text-align:center;
+}
+
+#modal .delbtn i {
+	font-size:1px;
+}
+
+#modal .content {
+	margin-top: 20px;
+	padding: 0px 10px;
+}
+
+.inputTitle {
+	font-weight:bold;
+	margin-bottom: 10px;
+}
+
+.reqbox {
+	padding-bottom: 10px;
+	border-bottom:0.5px solid rgba(208,208,208, .5);        
+}
+
+#modal .btn-lay {
+	float: right;
+	margin-right:20px;
+}
+
+#modal .btn-lay::after {
+	float: both;
+}
+
+#modal input[type="time"] {
+	width: 135px;
+	font-weight: bold;
+}
+
+#modal span {
+	color: red;
+}
+
+#modal #sch-del {
+	cursor :pointer;
+}
+
+#modal .choiceDay {
+	background-color: #96CB96;
+}
+
+#modal .cancelBtn {
+	  background-image: linear-gradient(to bottom,#fefefe 0,#ddd 100%);
+	  box-shadow: inset 0px 0px 0 #fcf8e3, 0 1px 1px rgb(0 0 0 / 8%);
+	  border : 1px solid lightgray;
+}
+
+  
+
+
+
+
+
+
