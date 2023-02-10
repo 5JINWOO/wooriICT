@@ -11,15 +11,18 @@
 > 게시판 / JS 기초구현 / 계산기 /달력 일정관리 기능 웹사이트
 
 ## 개발환경
-* Spring
+* Spring (sts-4.3.0.RELEASE)
 * Java
 * JavaScript
 * Jquery
 * Jstl
-* OracleSql
+* OracleSql (sqldeveloper)
 * Mybatis
 * Css
-* Apache-Tomcat
+* Apache-Tomcat (apache-tomcat-8.5.39)
+
+jdk-8u201-windows-x64 
+
 
 ## 주요기능
   * 게시판 CRUD
