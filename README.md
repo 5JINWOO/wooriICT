@@ -35,3 +35,68 @@ jdk-8u201-windows-x64
 
 
 
+
+---
+* 게시판
+<figure>
+<img src ="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbRD7rG%2FbtrYRg4xwEQ%2Ft20DnBcMkMWr8HM9eikuL1%2Fimg.png" 
+     width ="500px" height="300px">
+     <figurecaption>
+</figure>
+
+<figure>
+<img src ="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FurqFG%2FbtrYPDTsg5A%2F9hitNNkMnpkVNFncILIj5k%2Fimg.png" 
+     width ="500px" height="300px">
+     <figurecaption>
+</figure>
+
+<figure>
+<img src ="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FvsgCd%2FbtrYPBVEJGp%2FFKNYi8Kv8aOxnvp9l0qBOk%2Fimg.png" 
+     width ="500px" height="300px">
+     <figurecaption>
+</figure>
+
+---
+* ajax 게시판
+
+<figure>
+<img src ="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fbnvfh9%2FbtrYKups0VX%2F54UMtULXa2snhBFG3RjDyK%2Fimg.png" 
+     width ="500px" height="300px">
+     <figurecaption>
+</figure>
+
+---
+* JS TEST
+
+<figure>
+<img src ="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fq1Kaq%2FbtrYMXEGxDE%2FEKhEQhNHTrFnHXkWkHjEyK%2Fimg.png" 
+     width ="500px" height="300px">
+     <figurecaption>
+</figure>
+
+
+---
+* 계산기 
+<figure>
+<img src ="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FdNoSV9%2FbtrYJQ0AXdz%2Fg3oEaKXtdkckzYa4bcEyjk%2Fimg.png" 
+     width ="500px" height="300px">
+     <figurecaption>
+</figure>
+
+
+---
+* 달력(다이어리)
+<figure>
+<img src ="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fb4s600%2FbtrYLtw3tIo%2Ffx3dLpc75MlVWmwKuu5oWk%2Fimg.png" 
+     width ="500px" height="300px">
+     <figurecaption>
+</figure>
+
+<figure>
+<img src ="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FSTbgz%2FbtrYKFR6tlj%2Frq2hScqiMmkVG3KMh4yKmK%2Fimg.png" 
+     width ="500px" height="300px">
+     <figurecaption>
+</figure>
+
+---
+
